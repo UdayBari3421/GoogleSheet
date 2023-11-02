@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(./fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Regular.ttf);
+}

@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    color: black;
+    padding-top: 3px;
+}
+
+.active,
+li:hover {
+    background: #eeeeee;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: black;
+}
+
+.btn,
+#downloadBtn,
+#uploadBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.active-sheet {
+    background: #bbbebc;
+    border-radius: 12px;
+    text-decoration: underline;
+}
+
+li {
+    font-family: Roboto;
+    padding-inline: 20px;
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+    list-style: none;
+    color: white;
+    padding-top: 5px;
+}
+
+#activeElement {
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.root-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    position: relative;
+    top: 120px;
+    flex-direction: column;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 2.5rem;
+}
+
+.body {
+    position: relative;
+    display: flex;
+}
+
+.header {
+    z-index: 1;
+    width: 100%;
+    min-height: 120px;
+    background: white;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
+    background: white;
+    padding-inline: 20px;
+    align-items: center;
+    border-top: 2px solid #cbcecc;
+    gap: 15px;
+}
+
+.top {
+    z-index: 1;
+    position: sticky;
+    top: 120px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background: white;
+}
+
+.top :first-child {
+    position: sticky;
+    top: 120px;
+    left: 0;
+    background: #cbcecc;
+}
+
+.sno {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: fit-content;
+}
+
+.right {
+    overflow: auto;
+    width: 100%;
+    height: fit-content;
+    background: yellowgreen;
+}
+
+.right:hover {
+    cursor: crosshair;
+}
+
+.cell {
+    width: 150px;
+    height: 21px;
+    padding: 5px;
+    background: white;
+    border: 2px solid #f4f4f4;
+    outline: none;
+}
+
+
+.top-cell,
+.sno-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #dedfde;
+}
+
+.main-row {
+    display: flex;
+}
+
+.top-cell {
+    height: 23px;
+}
+
+.sno-cell,
+.top :first-child {
+    width: 35px;
+}
+
+.main-cell {
+    max-width: 150px;
+    max-height: 21px;
+    overflow: auto;
+}
+
+.main ::-webkit-scrollbar {
+    display: none;
+}
+
+.tool-row {
+    display: flex;
+    gap: 15px;
+}
+
+.hrow {
+    background: #eeeeee;
+    display: flex;
+    align-items: end;
+    padding: 15px 0px 10px 20px;
+}
+
+.hrow1 {
+    display: flex;
+    background: #1d7e67;
+    padding-left: 23px;
+}
+
+.hrow3 {
+    padding-top: 0;
+    gap: 12px;
+}
+
+.hrow3 input {
+    height: 100%;
+}
+
+.hrow3 :nth-child(3) {
+    flex-grow: 1;
+}
+
+select,
+input {
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background: white;
+}
+
+.option-btn {
+    padding: 2px;
+}
+
+.disp {
+    display: none;
+}
+
+
+#fontSize {
+    padding-left: 20px !important;
+    text-align: start !important;
+}
+
+.option-btn:hover {
+    background: #cbcecc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.disp:checked+label {
+    border-radius: 5px;
+    background: #cbcecc;
+}
+
+.tools {
+    display: flex;
+    gap: 30px;
+}
+
+.sheets-folder-cont {
+    display: flex;
+    gap: 5px;
+}
+
+#pasteBtn,
+#cutBtn,
+#copyBtn {
+    cursor: pointer;
+}
+
+
+.sheet-btn {
+    background: none;
+    border: none;
+    padding: 4px 9px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.current-sheet {
+    background: #89beffc6;
+}
