@@ -69,7 +69,6 @@ function applyStyleToCell(styleObject) {
   activeElement.style.color = styleObject.color;
   activeElement.style.backgroundColor = styleObject.bgColor;
   activeElement.style.textAlign = styleObject.textAlign;
-
   activeElement.style.fontWeight = styleObject.bold ? "bold" : "normal";
   activeElement.style.fontStyle = styleObject.italic ? "italic" : "normal";
   activeElement.style.textDecoration = styleObject.underline
