@@ -24,10 +24,8 @@ function onCellFocus(event) {
   cellNamePlaceHolder.value = elementId;
   activeElement = event.target;
   if (state[activeElement.id]) {
-    // Already Selected
     resetOptions(state[elementId]);
   } else {
-    // selected first time
     resetOptions(defaultProp);
   }
 }

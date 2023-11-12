@@ -16,7 +16,7 @@ function exportData() {
 }
 
 downloadBtn.addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent the default behavior
+  event.preventDefault(); 
   exportData();
 });
 
@@ -33,16 +33,11 @@ function importData(e) {
 
       reader.onload = (e) => {
         const importedSheets = JSON.parse(e.target.result);
-
-        // Clear existing sheets
         sheets.length = 0;
 
-        // Copy imported sheets to the sheets array
         importedSheets.forEach((importedSheet) => {
           sheets.push(importedSheet);
         });
-
-        // Switch to the last imported sheet
         switchSheet(sheets.length - 1);
         updateUI();
       };

@@ -13,7 +13,6 @@ bgColorlabel.addEventListener("click", () => {
 });
 
 bgColorInput.addEventListener("input", () => {
-  // bgColorlabel.style.background = bgColorInput.value;
   bgColor = bgColorInput.value;
 });
 
@@ -22,6 +21,5 @@ textColorlabel.addEventListener("click", () => {
 });
 
 textColorInput.addEventListener("input", () => {
-  // textColorlabel.style.background = textColorInput.value;
   color = textColorInput.value;
 });
